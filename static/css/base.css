@@ -1,0 +1,100 @@
+@font-face{
+    font-family:lastj
+    src:url(/static/lastninja.ttf);
+}
+
+body{
+    font-size:17px;
+    line-height:140%;
+    background-color:#f0ffff;
+
+    }
+
+@media screen and (max-device-width:480px){
+    body{font-size:25px}
+}
+
+#title{
+    color:#ccaaa0;
+    font-family:lastj,impact;
+    font-weight:normal;
+    border-color:black;
+    border-width:5px;
+    border-style:dashed;
+    border-radius: 25px 0 25px 0;
+    margin-right:100px;
+    padding:25px;
+}
+
+#num:link{text-decoration:none;color:#b76666;border-bottom:thin dotted #b76666;}
+#num:visited{text-decoration:none;color:#675c47;border-bottom:thin dotted #675c47;}
+#num:hover{text-decoration:none;color:#a75c47;border-bottom:thin dotted #a75c47;}
+
+.temp{
+    color:red;
+}
+
+.humid{
+    color:blue;
+}
+
+#footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    padding:20px 20px 30px 20px;
+    background-image:url(/static/images/ui.png);
+    background-repeat:no-repeat;
+    background-position:bottom right;
+}
+
+div#tablecon {
+    display: table;
+}
+
+div#row {
+    display: table-row;
+}
+
+div#list{
+    display: table-cell;
+    vertical: top;
+    border-style:solid;
+    border-width:thin;
+    width:60%;
+    background: #0ff0ff;
+    padding:20px ;
+    text-align:center;
+    background:url(/static/images/11.jpg);
+    float:right;
+}
+
+div#list2 {
+    display: table-cell;
+    vertical: top;
+}
+
+h2{
+    font-family:impact;
+    font-size: 125%;
+}
+
+small{
+    font-style:italic;
+}
+
+h2.greenc{
+    font-family:Arial;
+    color:red;
+    border-width:1px;
+    border-style:soild;
+}
+
+.guar{
+    border-width:3px;
+    border-color: normal;
+    border-bottom-style:dotted;
+
+
+}
