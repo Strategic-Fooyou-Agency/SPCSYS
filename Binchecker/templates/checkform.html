@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkform</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/checkform.css">
+</head>
+<body>
+{% extends "base.html" %}
+{% block titlepage %}
+<h1 id="title" >Bin Checker</h1>
+<hr/>
+<div id="menu">
+<a href="/admin/">bin表管理</a>
+</div>
+<div style="margin-bottom:10%">
+    <div>{{result}}</div>
+    {% autoescape off %}
+    {{ html_content }}
+    {% endautoescape %}
+</div>
+<form action="/binchecker/input/" method="post">{% csrf_token %}
+    <p>输入条码：</p>
+    <textarea name="body" rows="10" cols="150" style="width:45%"
+              title="扫码输入" onfocus="if (value =='多行输入回车隔开'){value =''}">多行输入回车隔开</textarea>
+    <p><input type="submit"><input type="reset" style="margin-left:20%"></p>
+</form>
+
+{% endblock %}
+
+</body>
+</html>

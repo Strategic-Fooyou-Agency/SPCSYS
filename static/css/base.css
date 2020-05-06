@@ -6,9 +6,18 @@
 body{
     font-size:17px;
     line-height:140%;
-    background-color:#f0ffff;
+    background-color:#f0fff0;
 
     }
+table {
+    border:2px solid black;
+    border-spacing: 0;
+    margin-left: 10px;
+}
+td, th{
+    border:1px dotted gray;
+    padding: 2px 10px;
+}
 
 @media screen and (max-device-width:480px){
     body{font-size:25px}
@@ -22,8 +31,9 @@ body{
     border-width:5px;
     border-style:dashed;
     border-radius: 25px 0 25px 0;
-    margin-right:100px;
+    margin:20px 100px 15px 10px;
     padding:25px;
+    background-color: #e07fee
 }
 
 #num:link{text-decoration:none;color:#b76666;border-bottom:thin dotted #b76666;}
@@ -40,39 +50,63 @@ body{
 
 #footer{
     position: fixed;
+    line-height: 50%;
     bottom:0;
     width:100%;
     text-align:center;
-    padding:20px 20px 30px 20px;
-    background-image:url(/static/images/ui.png);
-    background-repeat:no-repeat;
-    background-position:bottom right;
+    padding:0px 20px 10px 20px;
+    background-color: #feffff;
+    z-index: 99;
+}
+
+#cf {
+    position: static;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    padding:0px 20px 70px 20px;
+}
+
+div#head {
+    text-align:right;
+    background-color: #ccffee;
+    padding: 5px 10px;
 }
 
 div#tablecon {
     display: table;
+    width: 100%;
+    border-spacing: 10px;
 }
 
 div#row {
     display: table-row;
 }
 
-div#list{
+div.list{
     display: table-cell;
-    vertical: top;
+    vertical-align: top;
     border-style:solid;
     border-width:thin;
-    width:60%;
-    background: #0ff0ff;
-    padding:20px ;
+    padding: 15px;
     text-align:center;
+    width: 15%;
+    height: 200px;
     background:url(/static/images/11.jpg);
-    float:right;
+
 }
 
-div#list2 {
+
+div.list2 {
     display: table-cell;
-    vertical: top;
+    vertical-align: top;
+    border-style:solid;
+    border-width:thin;
+    padding: 15px 50px;
+    text-align:center;
+    width: 50%;
+    height: 100%;
+    margin: 100px;
 }
 
 h2{
